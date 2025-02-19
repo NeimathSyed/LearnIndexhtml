@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Party Voting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section with pumpkin image and title -->
+    <header class="header">
+        <img src="img.jpg" 
+             alt="Halloween is Here" 
+             class="my-image">
+        <h1>Halloween Costume Contest</h1>
+    </header>
+    
+    <!-- Input section for adding new guests -->
+    <div class="input-section">
+        <div class="input-labels">
+            <label for="guestName">Name:</label>
+            <label for="costume">Costume:</label>
+        </div>
+        <div class="input-fields">
+            <input type="text" id="guestName" placeholder="Enter guest name">
+            <input type="text" id="costume" placeholder="Enter costume">
+            <button onclick="addGuest()">Add Guest</button>
+        </div>
+    </div>
+
+    <!-- Statistics section -->
+    <div class="stats">
+        <p>Total Guests: <span id="totalGuests">0</span></p>
+        <p>Current Leader: <span id="leader">None</span></p>
+    </div>
+
+    <!-- Guest list header -->
+    <div class="guest-list-header">
+        <span class="header-name">Name</span>
+        <span class="header-costume">Costume</span>
+        <span class="header-votes">Votes</span>
+        <span class="header-actions">Actions</span>
+    </div>
+
+    <!-- Guest list container -->
+    <div class="guest-list" id="guestList">
+        <!-- Guests will be dynamically added here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
